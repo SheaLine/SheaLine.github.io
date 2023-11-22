@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shea Line Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Shea Line</h1>
+        <p>Computer Science Intern | Project Portfolio</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a current computer science student with progressive experience writing code and designing solutions. I am Seeking a challenging role as a computer science intern. Adept at working effectively in fast-paced, deadline-driven settings that demand strong organizational and analytical skills. I am currently studing for my BS in Computer Science: Game Design at the University of California, Santa Cruz. Here is a link to my <a href="Shea_Line_-_Computer_Science_Internship.pdf"target="_blank">full resume.</a></p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Toaster Oven -->
+        <div class="project">
+            <h3>Toaster Oven</h3>
+            <p>Designed and programed in C a finite state machine to simulate a toaster oven on a PIC32 microcontroller. This project was done in my Computer Systems and C Programming class. </p>
+            <a href="#" onclick="openModal('modalToasterOven', 'ToasterOven')">View Project</a>
+        </div>
+        <!-- Doubly Linked List & Graph ADT -->
+        <div class="project">
+            <h3>Doubly Linked List & Graph ADT</h3>
+            <p>Created a doubly linked list ADT and a graph ADT in C. Used Breadth First Search algorithim to implement these ADTs in a program to find the shortest path from a source in a graph. Completed in my indroduction to data structures and algorithims class. </p>
+            <a href="#" onclick="openModal('modalLinkedList&GraphADT', 'LinkedList&GraphADT')">View Project</a>
+        </div>
+        <!-- Red-Black tree Dictionary ADT -->
+        <div class="project">
+            <h3>Dictionary ADT using a Red-Black Tree</h3>
+            <p>Created a dictionary ADT that uses a Red-Black tree in C++. I then created simple programs to interact with this ADT. See README for details on how each program works. Completed in my indroduction to data structures and algorithims class. </p>
+            <a href="#" onclick="openModal('modalDictionary', 'Dictionary')">View Project</a>
+        </div>
+        <!-- Software Defined Network -->
+        <div class="project">
+            <h3>Software Defined Network</h3>
+            <p>Created a Software Defined Network (SDN). Used mininet to create a network topology in pyhton. Then created a POX controller to build the logic used for each router in the network. I implemented network rules for how each router should forward ICMP, TCP, and UDP packets based on the subnet of the sender and reciever. </p>
+            <a href="#" onclick="openModal('modalSDN', 'SDN')">View Project</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: sline@ucsc.edu</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/shea-line-ab3918224/" target="_blank">linkedin-profile</a></p>
+    </section>
+
+    <footer>
+        <p>© 2023 Shea Line</p>
+    </footer>
+
+<!-- Modal Structure for Toaster Oven Project -->
+    <div id="modalToasterOven" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalToasterOven')">&times;</span>
+            <h2>Project Files - Toaster Oven</h2>
+            <ul id="fileListToasterOven">
+                <!-- File links will be populated here -->
+            </ul>
+        </div>
+    </div>
+
+<!-- Modal Structure for Doubly Linked List & Graph ADT -->
+    <div id="modalLinkedList&GraphADT" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalLinkedList&GraphADT')">&times;</span>
+            <h2>Project Files - Doubly Linked List & Graph ADT</h2>
+            <ul id="fileListLinkedList&GraphADT">
+                <!-- File links will be populated here -->
+            </ul>
+        </div>
+    </div>
+
+<!-- Modal Structure for Red-Black tree Dictionary ADT -->
+    <div id="modalDictionary" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalDictionary')">&times;</span>
+            <h2>Project Files - Dictionary ADT using a Red-Black Tree</h2>
+            <ul id="fileListDictionary">
+                <!-- File links will be populated here -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- Modal Structure for Red-Black tree Dictionary ADT -->
+    <div id="modalSDN" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalSDN')">&times;</span>
+            <h2>Project Files - Software Defined Network</h2>
+            <ul id="fileListSDN">
+                <!-- File links will be populated here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
